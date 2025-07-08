@@ -1,0 +1,99 @@
+<!DOCTYPE html> <!-- Define o tipo de documento como HTML5 -->
+<html lang="pt-BR"> <!-- Define o idioma principal da página como português do Brasil -->
+
+<head>
+  <meta charset="UTF-8" /> <!-- Define o conjunto de caracteres para UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- Define viewport para responsividade -->
+  <title>Agendar Nova Coleta</title> <!-- Título da aba do navegador -->
+  <link rel="stylesheet" href="style.css" /> <!-- Vincula o arquivo CSS externo para estilos -->
+</head>
+
+<body>
+  <!-- Faixa verde fixa no topo da página -->
+  <div class="faixa-topo"></div>
+
+  <!-- Container centralizado para o conteúdo principal -->
+  <main class="container">
+    
+    <!-- Título principal com estilo verde e margem inferior -->
+    <h1 class="titulo-principal">Agendar Nova Coleta</h1>
+
+    <!-- Subtítulo explicativo com estilo de destaque -->
+    <h2 class="subtitulo">Selecionar o que será coletado</h2>
+
+    <!-- Grupo flexível para os checkboxes que funcionam como botões -->
+    <div class="checkbox-group">
+      <!-- Checkbox oculto e label estilizado para substituir visualmente -->
+      <input type="checkbox" id="laminas" name="item" value="Lâminas" />
+      <label for="laminas" class="checkbox-label">Lâminas</label>
+
+      <input type="checkbox" id="cabelos" name="item" value="Cabelos" />
+      <label for="cabelos" class="checkbox-label">Cabelos</label>
+
+      <input type="checkbox" id="embalagens" name="item" value="Embalagens" />
+      <label for="embalagens" class="checkbox-label">Embalagens</label>
+    </div>
+
+    <!-- Formulário para agendamento com validação em JavaScript -->
+    <form id="form-coleta" class="formulario" onsubmit="return agendarColeta(event)">
+      
+      <!-- Label para o seletor de data e horário, centralizado -->
+      <label for="dataHorario" class="label">Escolher data e horário</label>
+      
+      <!-- Select estilizado para escolha de data e horário disponíveis -->
+      <select id="dataHorario" name="dataHorario" required class="input">
+        <option value="" disabled selected>Selecione data e horário</option>
+        <option value="2025-07-10 14:00">10/07/2025 – 14:00</option>
+        <option value="2025-07-10 16:00">10/07/2025 – 16:00</option>
+        <option value="2025-07-12 09:00">12/07/2025 – 09:00</option>
+        <option value="2025-07-12 16:00">12/07/2025 – 16:00</option>
+        <option value="2025-07-15 16:00">15/07/2025 – 16:00</option>
+        <option value="2025-07-18 09:00">18/07/2025 – 09:00</option>
+        <option value="2025-07-18 14:00">18/07/2025 – 14:00</option>
+      </select>
+
+      <!-- Botão estilizado para envio do formulário -->
+      <button type="submit" class="botao" style="margin-top: 25px;">Confirmar</button>
+    </form>
+
+    <!-- Parágrafo para exibir mensagem de sucesso, inicialmente oculto -->
+    <p id="msg-sucesso">✅ Coleta agendada com sucesso!</p>
+
+    <!-- Botão link para voltar ao menu inicial, estilizado com cor verde escura -->
+    <a href="tela-inicial-barbeiro.html" class="botao botao-voltar">Voltar ao Menu Inicial</a>
+  </main>
+
+  <!-- Script JavaScript para validar o formulário antes de enviar -->
+  <script>
+    function agendarColeta(event) {
+      event.preventDefault(); // Evita que o formulário seja enviado automaticamente
+
+      // Captura todos os checkboxes selecionados
+      const checkboxes = document.querySelectorAll('input[name="item"]:checked');
+
+      // Verifica se pelo menos um item foi selecionado
+      if (checkboxes.length === 0) {
+        alert('Por favor, selecione pelo menos um item para coleta.');
+        return false; // Impede o envio do formulário
+      }
+
+      // Captura o valor selecionado no campo de data e horário
+      const dataHorario = document.getElementById('dataHorario').value;
+
+      // Verifica se foi escolhida uma data e horário
+      if (!dataHorario) {
+        alert('Por favor, escolha uma data e horário.');
+        return false; // Impede o envio do formulário
+      }
+
+      // Exibe a mensagem de sucesso (que estava oculta via CSS)
+      document.getElementById('msg-sucesso').style.display = 'block';
+
+      // Reseta os campos do formulário para estado inicial
+      document.getElementById('form-coleta').reset();
+
+      return false; // Impede o envio e redirecionamento padrão do formulário
+    }
+  </script>
+</body>
+</html>

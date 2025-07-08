@@ -1,0 +1,51 @@
+<!DOCTYPE html> <!-- Define o documento como HTML5 -->
+<html lang="pt-BR"> <!-- Define o idioma da página como português do Brasil -->
+
+<head>
+  <meta charset="UTF-8" /> <!-- Define a codificação de caracteres como UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Configura viewport para responsividade -->
+  <title>Login - Parceiro</title> <!-- Título da aba do navegador -->
+  <link rel="stylesheet" href="style.css" /> <!-- Link para o arquivo CSS externo -->
+</head>
+
+<body>
+  <!-- Faixa verde fixa no topo da página -->
+  <div class="faixa-topo"></div>
+
+  <!-- Container centralizado para o conteúdo -->
+  <div class="container">
+    <!-- Logo com classe para controlar tamanho e margem -->
+    <img src="logo-eco-barber.png" alt="Logo Eco Barber" class="logo-grande" />
+
+    <!-- Título principal da página -->
+    <h1>Login - Parceiro</h1>
+
+    <!-- Formulário de login com ação para tela inicial do parceiro -->
+    <form class="formulario" action="tela-inicial-parceiro.html" onsubmit="return validarLogin()">
+      <!-- Campo para e-mail com placeholder e classe para estilização -->
+      <input type="email" id="email" placeholder="E-mail" required class="input" />
+      <!-- Campo para senha com placeholder e classe para estilização -->
+      <input type="password" id="senha" placeholder="Senha" required class="input" />
+      <!-- Botão de envio com estilo personalizado -->
+      <button type="submit" class="botao">Entrar</button>
+    </form>
+  </div>
+
+  <!-- Script JavaScript para validação simples dos dados de login -->
+  <script>
+    function validarLogin() {
+      // Captura os valores digitados nos campos e-mail e senha
+      const email = document.getElementById('email').value;
+      const senha = document.getElementById('senha').value;
+
+      // Verifica se e-mail e senha correspondem aos valores definidos
+      if (email === 'parceiro01@gmail.com' && senha === '000000') {
+        return true; // Permite o envio do formulário (redireciona para a tela inicial)
+      } else {
+        alert('E-mail ou senha incorretos.'); // Alerta o usuário em caso de erro
+        return false; // Impede o envio do formulário
+      }
+    }
+  </script>
+</body>
+</html>

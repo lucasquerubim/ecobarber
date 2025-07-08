@@ -49,6 +49,7 @@
   </div>
 
   <!-- Script JavaScript embutido para validação simples de login -->
+  <script src="script.js"></script>
   <script>
     // Função para validar os dados do formulário
     function validarLogin() {
@@ -58,6 +59,8 @@
 
       // Verifica se os dados correspondem ao login permitido
       if (email === 'gabrielbarbeiro@gmail.com' && senha === '000000') {
+        const user = new Usuario(); // cria um objeto de usuario quando efetua o login
+        localStorage.setItem("user",JSON.stringify(user)) // armazenando-o diretamente no browser
         return true; // Permite o redirecionamento (submit do formulário)
       } else {
         alert('E-mail ou senha incorretos.'); // Exibe mensagem de erro

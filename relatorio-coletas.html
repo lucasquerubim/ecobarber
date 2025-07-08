@@ -19,17 +19,15 @@
     <h1 class="titulo-principal">Relatório de Coletas</h1>
 
     <!-- Lista de coletas agendadas -->
-    <div class="lista-coletas"> <!-- Aplica espaçamento, centralização e remove bullets -->
-      <div class="item-coleta">Coleta agendada – 12/07 – 14h – Cabelos</div> <!-- Item individual com estilização -->
-      <div class="item-coleta">Coleta agendada – 14/07 – 10h – Lâminas</div>
-      <div class="item-coleta">Coleta agendada – 16/07 – 09h – Embalagens</div>
-      <div class="item-coleta">Coleta agendada – 18/07 – 15h – Cabelos</div>
-      <div class="item-coleta">Coleta agendada – 20/07 – 13h – Lâminas</div>
-    </div>
+    <div id="lista-coletas"></div>
 
     <!-- Botão de voltar com estilo padrão de botão e cor personalizada de "voltar" -->
     <a href="tela-inicial-barbeiro.html" class="botao botao-voltar">Voltar ao Menu Inicial</a>
 
   </main>
+  <script src="script.js"></script>
+  <script>
+    listarColetas();
+  </script>
 </body>
 </html>

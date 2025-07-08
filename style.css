@@ -288,7 +288,7 @@ h1 {
    ========================= */
 
 /* Lista sem marcadores e largura limitada */
-.lista-coletas {
+#lista-coletas {
   max-width: 31.25rem; /* 500px */
   margin: 0 auto 2.5rem; /* Centraliza e espaça inferiormente */
   padding: 0; /* Remove padding padrão */
@@ -304,7 +304,7 @@ h1 {
   border-radius: 0.5rem; /* Bordas arredondadas 8px */
   font-weight: 600; /* Fonte semi-bold */
   font-size: 1rem; /* Tamanho da fonte 16px */
-  text-align: center; /* Texto centralizado */
+  text-align: left;
   box-shadow: 0 0.125rem 0.375rem rgba(0,75,21,0.15); /* Sombra suave */
 }
 

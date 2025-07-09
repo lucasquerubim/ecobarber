@@ -24,9 +24,4 @@ Funcionalidades principais
 - JavaScript básico para validação de login e agendamento
 
 ## Integrantes
-Arthur Belford
-Lucas Querubim
-Matheus Ricardo
-Pedro Gabriel 
-Renata Gusmao 
-Sabrina beatriz
+Arthur Belford; Lucas Querubim; Matheus Ricardo; Pedro Gabriel; Renata Gusmao; Sabrina beatriz.

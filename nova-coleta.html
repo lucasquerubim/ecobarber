@@ -12,7 +12,6 @@
 
   <div class="faixa-topo"></div>
 
-  <!-- Container centralizado para o conteúdo principal -->
   <main class="container">
     
 
@@ -67,7 +66,7 @@
 
        if (checkboxes.length === 0) {
         alert('Por favor, selecione pelo menos um item para coleta.');
-        return false; // Impede o envio do formulário
+        return false;
       } else {
         for (let i = 0; i < checkboxes.length; i++) {
           residuos.push(checkboxes[i].id)
@@ -79,8 +78,7 @@
 
       if (!dataHorario) {
         alert('Por favor, escolha uma data e horário.');
-        return false; // Impede o envio do formulário
-      }
+        return false; 
 
       document.getElementById('msg-sucesso').style.display = 'block';
 

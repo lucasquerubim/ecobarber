@@ -22,3 +22,11 @@ Funcionalidades principais
 - HTML5
 - CSS3 (com estilo limpo e organizado)
 - JavaScript básico para validação de login e agendamento
+
+## Integrantes
+Arthur Belford
+Lucas Querubim
+Matheus Ricardo
+Pedro Gabriel 
+Renata Gusmao 
+Sabrina beatriz

@@ -46,7 +46,7 @@ function listarColetas() {
         coletadiv.innerHTML =
         `<h2>Coleta agendada</h2>
         <p>Agendado às ${data.getHours()}:${data.getMinutes()} de ${data.getDate()}/${data.getMonth() + 1}/${data.getFullYear()}</p>
-        <p>Resíduos: ${usuario.coletas_agendadas[i].residuos}</p>`; // preenche o html
+        <p>Resíduos: ${usuario.coletas_agendadas[i].residuos}</p>`;
            listacoletas.appendChild(coletadiv); 
     };
 

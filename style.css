@@ -1,70 +1,55 @@
-/* =========================
-   Estilos Gerais da Página
-   ========================= */
-
-/* Define estilos básicos do body (cor, fonte, margem e alinhamento) */
 body {
-  background-color: #efefef; /* Fundo cinza claro para toda a página */
-  font-family: Arial, sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana; /* Pilha de fontes para boa legibilidade */
-  margin: 0; /* Remove margens padrão do navegador */
-  padding: 10px 0 40px; /* Espaçamento interno: 10px em cima, 0 nas laterais e 40px embaixo */
-  text-align: center; /* Centraliza o texto dentro do body */
-  font-size: 1rem; /* Define o tamanho base da fonte como 16px (1rem) */
+  background-color: #efefef; 
+  font-family: Arial, sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana; 
+  margin: 0; 
+  padding: 10px 0 40px;
+  text-align: center; 
+  font-size: 1rem;
 }
 
-/* =========================
-   Estilo para a logo principal
-   ========================= */
 
-/* Classe usada para controlar o tamanho da logo no topo */
 .logo-grande {
-  width: 480px;       /* Define uma nova largura maior */
-  height: 270px;       /* Define uma nova altura para quebrar a proporção original */
-  margin-bottom: 1.875rem; /* Espaço abaixo da logo (30px) */
+  width: 480px;       
+  height: 270px;     
+  margin-bottom: 1.875rem; 
 }
 
-/* Faixa verde fixa no topo da página */
 .faixa-topo {
-  height: 10px; /* Altura da faixa */
-  background-color: #004b15; /* Verde escuro para identidade visual */
-  width: 100%; /* Ocupa toda a largura da tela */
-  position: fixed; /* Fixa no topo mesmo ao rolar a página */
-  top: 0; /* Posiciona no topo */
-  left: 0; /* Posiciona à esquerda */
-  z-index: 10; /* Garante que fique acima de outros elementos */
+  height: 10px; 
+  background-color: #004b15; 
+  width: 100%; 
+  position: fixed;
+  top: 0; 
+  left: 0; 
+  z-index: 10;
 }
 
-/* Container centralizado e com largura máxima */
 .container {
-  max-width: 720px; /* Limita a largura máxima do conteúdo */
-  margin: 60px auto 0; /* Margem superior para afastar da faixa fixa, e margem automática lateral para centralizar */
-  padding: 0 24px; /* Espaçamento interno nas laterais */
+  max-width: 720px;
+  margin: 60px auto 0; 
+  padding: 0 24px; 
 }
 
-/* =========================
-   Títulos e Textos
-   ========================= */
 
-/* Título principal (h1 ou classe .titulo-principal) */
-.titulo-principal,
+
 h1 {
-  font-weight: 500; /* Peso médio da fonte para destaque */
-  font-size: 1.625rem; /* Tamanho da fonte (~26px) usando rem para acessibilidade */
-  color: #004b15; /* Cor verde escura para destaque */
-  margin-bottom: 1.5rem; /* Espaço inferior para separar do próximo elemento */
-  text-align: center; /* Centraliza o texto */
+  font-weight: 500; 
+  font-size: 1.625rem;
+  color: #004b15; 
+  margin-bottom: 1.5rem; 
+  text-align: center; 
 }
 
-/* Subtítulo */
+
 .subtitulo {
-  font-size: 1.25rem; /* Tamanho do texto (~20px) */
-  font-weight: 600; /* Fonte semi-bold para destaque */
-  color: #004b15; /* Verde escuro */
-  margin-bottom: 1rem; /* Espaço inferior */
-  text-align: center; /* Centralizado */
+  font-size: 1.25rem; 
+  font-weight: 600; 
+  color: #004b15; 
+  margin-bottom: 1rem; 
+  text-align: center; 
 }
 
-/* Descrição textual centralizada */
+
 .descricao-curso {
   max-width: 600px; /* Largura máxima para facilitar leitura */
   margin: 1.5rem auto 2rem; /* Margem vertical e centraliza horizontalmente */
@@ -74,254 +59,225 @@ h1 {
   text-align: center; /* Centralizado */
 }
 
-/* =========================
-   Botões Reutilizáveis
-   ========================= */
 
-/* Botão padrão */
 .botao {
-  display: block; /* Exibe como bloco para controlar largura e margens */
-  width: 100%; /* Ocupa 100% da largura do container pai */
-  max-width: 320px; /* Limita a largura máxima */
-  margin: 1.25rem auto 0; /* Margem superior para espaçamento e centraliza horizontalmente */
-  padding: 0.875rem 0; /* Espaçamento vertical interno (14px) */
-  background-color: #824e00; /* Cor de fundo marrom escuro */
-  color: #efefef; /* Cor do texto clara */
-  font-size: 1rem; /* Tamanho do texto (16px) */
-  font-weight: 600; /* Fonte semi-bold */
-  border: none; /* Remove borda padrão */
-  border-radius: 0.375rem; /* Bordas arredondadas (6px) */
-  cursor: pointer; /* Cursor pointer ao passar mouse para indicar clicável */
-  text-align: center; /* Centraliza o texto */
-  text-decoration: none; /* Remove sublinhado em links */
-  transition: background-color 0.3s ease; /* Transição suave para mudança de cor */
+  display: block; 
+  width: 100%;
+  max-width: 320px;
+  margin: 1.25rem auto 0; 
+  padding: 0.875rem 0; 
+  background-color: #824e00; 
+  color: #efefef;
+  font-size: 1rem; 
+  font-weight: 600;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer; 
+  text-align: center; 
+  text-decoration: none; 
+  transition: background-color 0.3s ease;
 }
 
-/* Hover do botão para efeito visual */
+
 .botao:hover {
-  background-color: #663c00; /* Tom mais escuro no hover */
+  background-color: #663c00; 
 }
 
-/* Botão de voltar, variante especial do botão padrão */
+
 .botao-voltar {
-  max-width: 200px; /* Largura menor que o padrão */
-  margin: 1.875rem auto 0; /* Espaçamento superior e centralizado horizontalmente */
-  background-color: #004b15; /* Verde escuro */
+  max-width: 200px;
+  margin: 1.875rem auto 0; 
+  background-color: #004b15; 
 }
 
-/* Hover do botão voltar */
 .botao-voltar:hover {
-  background-color: #00350d; /* Verde mais escuro no hover */
+  background-color: #00350d; 
 }
 
-/* =========================
-   Botões estilo card para parceiros e cursos
-   ========================= */
 
-/* Estilos comuns para botões parceiros e cursos */
 .parceiro-botao,
 .curso-botao {
-  background-color: #fff; /* Fundo branco */
-  padding: 1rem 1.5rem; /* Espaçamento interno (16px 24px) */
-  border-radius: 0.625rem; /* Bordas arredondadas (10px) */
-  box-shadow: 0 0.25rem 0.625rem rgba(0,0,0,0.1); /* Sombra suave */
-  display: flex; /* Flexbox para alinhamento */
-  align-items: center; /* Centraliza verticalmente */
-  justify-content: center; /* Centraliza horizontalmente */
-  text-decoration: none; /* Remove sublinhado */
-  font-weight: 600; /* Fonte semi-bold */
-  color: #004b15; /* Cor verde escura */
-  transition: transform 0.2s ease, box-shadow 0.2s ease, color 0.2s ease; /* Transições para hover */
-  cursor: pointer; /* Cursor pointer */
-  user-select: none; /* Evita seleção de texto acidental */
+  background-color: #fff; 
+  padding: 1rem 1.5rem; 
+  border-radius: 0.625rem; 
+  box-shadow: 0 0.25rem 0.625rem rgba(0,0,0,0.1); 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  text-decoration: none; 
+  font-weight: 600;
+  color: #004b15; 
+  transition: transform 0.2s ease, box-shadow 0.2s ease, color 0.2s ease; 
+  cursor: pointer; 
+  user-select: none; 
 }
 
-/* Estilo específico para parceiros */
+
 .parceiro-botao {
-  min-width: 12.5rem; /* Largura mínima 200px */
-  min-height: 6.25rem; /* Altura mínima 100px */
-  margin-top: 2.5rem; /* Margem superior de 40px */
-  gap: 0.625rem; /* Espaço entre elementos internos (10px) */
+  min-width: 12.5rem; 
+  min-height: 6.25rem; 
+  margin-top: 2.5rem; 
+  gap: 0.625rem; 
 }
 
-/* Imagem dentro do botão parceiro */
 .parceiro-botao img {
-  max-height: 3.75rem; /* Altura máxima 60px */
-  max-width: 10rem; /* Largura máxima 160px */
-  object-fit: contain; /* Ajusta imagem sem distorcer */
+  max-height: 3.75rem; 
+  max-width: 10rem; 
+  object-fit: contain; 
 }
 
-/* Estilo específico para botões de curso */
+
 .curso-botao {
-  min-width: 15.625rem; /* Largura mínima 250px */
-  padding: 1.125rem 1.5rem; /* Padding vertical 18px e horizontal 24px */
-  margin-bottom: 2.5rem; /* Margem inferior 40px */
-  text-align: center; /* Texto centralizado */
+  min-width: 15.625rem; 
+  padding: 1.125rem 1.5rem; 
+  margin-bottom: 2.5rem; 
+  text-align: center; 
 }
 
-/* Hover para parceiros e cursos */
+
 .parceiro-botao:hover,
 .curso-botao:hover {
-  transform: scale(1.04); /* Leve aumento */
-  box-shadow: 0 0.375rem 1rem rgba(0,0,0,0.15); /* Sombra mais forte */
+  transform: scale(1.04);
+  box-shadow: 0 0.375rem 1rem rgba(0,0,0,0.15); 
 }
 
-/* Cor diferente no hover para cursos */
+
 .curso-botao:hover {
-  color: #824e00; /* Marrom escuro */
+  color: #824e00; 
 }
 
-/* =========================
-   Formulários e Inputs
-   ========================= */
 
-/* Container centralizado para formulários */
 .formulario {
-  max-width: 18.75rem; /* 300px */
-  margin: 0 auto; /* Centralizado horizontalmente */
+  max-width: 18.75rem; 
+  margin: 0 auto; 
 }
 
-/* Labels do formulário */
+
 .label {
-  display: block; /* Exibe em linha separada */
-  text-align: center; /* Centraliza texto */
-  font-size: 1rem; /* 16px */
-  font-weight: 600; /* Semi-bold */
-  color: #004b15; /* Verde escuro */
-  margin-bottom: 0.5rem; /* Espaço abaixo do label */
+  display: block; 
+  text-align: center; 
+  font-size: 1rem; 
+  font-weight: 600; 
+  color: #004b15; 
+  margin-bottom: 0.5rem; 
 }
 
-/* Campos de entrada (input) */
+
 .input {
-  width: 100%; /* Largura total do container pai */
-  max-width: 22.5rem; /* 360px */
-  margin: 0.625rem auto 1.875rem; /* Margem superior, centraliza e margem inferior */
-  padding: 0.75rem 0.625rem; /* Espaçamento interno vertical 12px, horizontal 10px */
-  font-size: 1rem; /* Tamanho da fonte 16px */
-  border: 1px solid #ccc; /* Borda cinza clara */
-  border-radius: 0.375rem; /* Bordas arredondadas 6px */
-  display: block; /* Exibe como bloco */
+  width: 100%; 
+  max-width: 22.5rem; 
+  margin: 0.625rem auto 1.875rem; 
+  padding: 0.75rem 0.625rem; 
+  font-size: 1rem; 
+  border: 1px solid #ccc; 
+  border-radius: 0.375rem; 
+  display: block;
 }
 
-/* =========================
-   Checkbox toggle estilizado
-   ========================= */
 
-/* Container flexível para grupo de checkboxes */
 .checkbox-group {
-  display: flex; /* Usa flexbox */
-  justify-content: center; /* Centraliza itens horizontalmente */
-  gap: 1.5rem; /* Espaço de 24px entre os itens */
-  margin-bottom: 1.875rem; /* Espaço inferior de 30px */
-  flex-wrap: wrap; /* Permite quebra de linha para telas pequenas */
+  display: flex; 
+  justify-content: center; 
+  gap: 1.5rem; 
+  margin-bottom: 1.875rem;
+  flex-wrap: wrap; 
 }
 
-/* Checkbox original escondido */
+
 .checkbox-group input[type="checkbox"] {
-  display: none; /* Esconde checkbox real */
+  display: none; 
 }
 
-/* Label estilizado para substituir checkbox */
+
 .checkbox-label {
-  background-color: #004b15; /* Verde escuro */
-  color: #efefef; /* Texto claro */
-  padding: 0.75rem 1.875rem; /* Espaçamento interno: 12px vertical, 30px horizontal */
-  border-radius: 30px; /* Bordas arredondadas */
-  cursor: pointer; /* Cursor pointer para indicar clicável */
-  font-weight: 600; /* Fonte semi-bold */
-  user-select: none; /* Evita seleção do texto */
-  text-align: center; /* Centraliza texto */
-  min-width: 5.625rem; /* Largura mínima 90px */
-  box-shadow: 0 0.25rem 0.5rem rgba(0,75,21,0.3); /* Sombra suave */
-  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transições suaves */
+  background-color: #004b15; 
+  color: #efefef; 
+  padding: 0.75rem 1.875rem; 
+  border-radius: 30px;
+  cursor: pointer; 
+  font-weight: 600; 
+  user-select: none; 
+  text-align: center; 
+  min-width: 5.625rem; 
+  box-shadow: 0 0.25rem 0.5rem rgba(0,75,21,0.3);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; 
 }
 
-/* Quando checkbox está marcado, estiliza o label seguinte */
+
 .checkbox-group input[type="checkbox"]:checked + .checkbox-label {
-  background-color: #824e00; /* Marrom escuro */
-  box-shadow: 0 0.375rem 0.75rem rgba(130,78,0,0.6); /* Sombra mais forte */
+  background-color: #824e00; 
+  box-shadow: 0 0.375rem 0.75rem rgba(130,78,0,0.6);
 }
 
-/* Hover no label estilizado */
+
 .checkbox-label:hover {
-  background-color: #005a1c; /* Verde mais claro no hover */
+  background-color: #005a1c;
 }
 
-/* =========================
-   Cards e Grid Responsivo
-   ========================= */
-
-/* Grid para exibir cards de forma responsiva */
 .grid-cards {
-  display: grid; /* Usa grid layout */
-  grid-template-columns: repeat(auto-fit, minmax(11.25rem, 1fr)); /* Colunas flexíveis de no mínimo 180px */
-  gap: 1.25rem; /* Espaço de 20px entre os cards */
-  max-width: 37.5rem; /* 600px */
-  margin: 0 auto 2.5rem; /* Centraliza e espaça inferiormente */
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(11.25rem, 1fr)); 
+  gap: 1.25rem; 
+  max-width: 37.5rem; 
+  margin: 0 auto 2.5rem; 
 }
 
-/* Estilo geral dos cards */
+
 .card {
-  background-color: #004b15; /* Verde escuro */
-  color: #fff; /* Texto branco */
-  padding: 2.5rem 1.25rem; /* Espaçamento interno: 40px vertical, 20px horizontal */
-  font-size: 1.125rem; /* Tamanho da fonte 18px */
-  font-weight: bold; /* Texto em negrito */
-  text-decoration: none; /* Remove sublinhado */
-  border-radius: 0.5rem; /* Bordas arredondadas (8px) */
-  box-shadow: 0 0.25rem 0.375rem rgba(0,0,0,0.1); /* Sombra leve */
-  transition: background-color 0.3s ease; /* Transição suave */
-  display: flex; /* Flexbox para alinhamento */
-  align-items: center; /* Centraliza verticalmente */
-  justify-content: center; /* Centraliza horizontalmente */
-  min-height: 7.5rem; /* Altura mínima 120px */
-  text-align: center; /* Texto centralizado */
+  background-color: #004b15;
+  color: #fff; 
+  padding: 2.5rem 1.25rem; 
+  font-size: 1.125rem;
+  font-weight: bold; 
+  text-decoration: none; 
+  border-radius: 0.5rem; 
+  box-shadow: 0 0.25rem 0.375rem rgba(0,0,0,0.1); 
+  transition: background-color 0.3s ease; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  min-height: 7.5rem; 
+  text-align: center; 
 }
 
-/* Hover para efeito de destaque nos cards */
+
 .card:hover {
-  background-color: #00350d; /* Verde mais escuro */
+  background-color: #00350d; 
 }
 
-/* =========================
-   Listas estilizadas
-   ========================= */
 
-/* Lista sem marcadores e largura limitada */
+
 #lista-coletas {
-  max-width: 31.25rem; /* 500px */
-  margin: 0 auto 2.5rem; /* Centraliza e espaça inferiormente */
-  padding: 0; /* Remove padding padrão */
-  list-style: none; /* Remove marcadores padrão */
+  max-width: 31.25rem;
+  margin: 0 auto 2.5rem;
+  padding: 0; 
+  list-style: none; 
 }
 
-/* Itens individuais da lista */
+
 .item-coleta {
-  background-color: #fff; /* Fundo branco */
-  color: #004b15; /* Verde escuro */
-  padding: 0.875rem 1.25rem; /* Espaçamento interno (14px vertical, 20px horizontal) */
-  margin-bottom: 0.75rem; /* Espaçamento inferior */
-  border-radius: 0.5rem; /* Bordas arredondadas 8px */
-  font-weight: 600; /* Fonte semi-bold */
-  font-size: 1rem; /* Tamanho da fonte 16px */
+  background-color: #fff; 
+  color: #004b15;
+  padding: 0.875rem 1.25rem; 
+  margin-bottom: 0.75rem; 
+  border-radius: 0.5rem; 
+  font-weight: 600;
+  font-size: 1rem;
   text-align: left;
-  box-shadow: 0 0.125rem 0.375rem rgba(0,75,21,0.15); /* Sombra suave */
+  box-shadow: 0 0.125rem 0.375rem rgba(0,75,21,0.15);
 }
 
-/* =========================
-   Mensagem de sucesso
-   ========================= */
 
 #msg-sucesso {
-  display: none; /* Inicialmente escondida */
-  max-width: 31.25rem; /* 500px */
-  margin: 1.5rem auto 0; /* Espaçamento superior e centralização */
-  padding: 1rem; /* Espaçamento interno */
-  font-weight: bold; /* Texto em negrito */
-  font-size: 1.1rem; /* Fonte confortável (~17.6px) */
-  color: #155724; /* Verde escuro para sucesso */
-  background-color: #d4edda; /* Fundo verde claro */
-  border: 1px solid #c3e6cb; /* Borda verde */
-  border-radius: 0.5rem; /* Bordas arredondadas 8px */
-  text-align: center; /* Centralizado */
+  display: none; 
+  max-width: 31.25rem; 
+  margin: 1.5rem auto 0; 
+  padding: 1rem; 
+  font-weight: bold; 
+  font-size: 1.1rem;
+  color: #155724;
+  background-color: #d4edda; 
+  border: 1px solid #c3e6cb; 
+  border-radius: 0.5rem;
+  text-align: center; 
 }

@@ -51,12 +51,12 @@ h1 {
 
 
 .descricao-curso {
-  max-width: 600px; /* Largura máxima para facilitar leitura */
-  margin: 1.5rem auto 2rem; /* Margem vertical e centraliza horizontalmente */
-  font-size: 1.125rem; /* Fonte confortável (~18px) */
-  line-height: 1.6; /* Espaçamento entre linhas para melhor leitura */
-  color: #333; /* Cor cinza escuro para texto */
-  text-align: center; /* Centralizado */
+  max-width: 600px;
+  margin: 1.5rem auto 2rem; 
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #333; 
+  text-align: center;
 }
 
 

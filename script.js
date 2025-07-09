@@ -18,7 +18,7 @@ class Usuario {
 
     terminar_coleta = function(i) {
         historico_coletas.push[coletas_agendadas[i]];
-        coletas_agendadas.splice(i,1) // .splice(i,n) retira n items a partir do indice da lista (i)
+        coletas_agendadas.splice(i,1) 
     }
 };
 
@@ -47,7 +47,7 @@ function listarColetas() {
         `<h2>Coleta agendada</h2>
         <p>Agendado às ${data.getHours()}:${data.getMinutes()} de ${data.getDate()}/${data.getMonth() + 1}/${data.getFullYear()}</p>
         <p>Resíduos: ${usuario.coletas_agendadas[i].residuos}</p>`; // preenche o html
-           listacoletas.appendChild(coletadiv); // adiciona o div para a lista de coletas
+           listacoletas.appendChild(coletadiv); 
     };
 
     for (i=0; i < usuario.historico_coletas.length; i++) { 

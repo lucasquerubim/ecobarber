@@ -64,9 +64,9 @@
       const checkboxes = document.querySelectorAll('input[name="item"]:checked');
       const residuos = [];
 
-       if (checkboxes.length === 0) {
-        alert('Por favor, selecione pelo menos um item para coleta.');
-        return false;
+      if (checkboxes.length === 0) {
+          alert('Por favor, selecione pelo menos um item para coleta.');
+          return false;
       } else {
         for (let i = 0; i < checkboxes.length; i++) {
           residuos.push(checkboxes[i].id)
@@ -79,13 +79,12 @@
       if (!dataHorario) {
         alert('Por favor, escolha uma data e horário.');
         return false; 
-
+      }
       document.getElementById('msg-sucesso').style.display = 'block';
 
       document.getElementById('form-coleta').reset();
 
       return false; 
-    }
     }
   </script>
 </body>
